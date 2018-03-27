@@ -1,7 +1,5 @@
 # test-echo-service
 
-This is test project, which implements (more or less) test task
-
 Requirements
 
 * working AWS account - http://aws.amazon.com/
