@@ -8,7 +8,7 @@ data "template_file" "cloud-init-cfg" {
     ssh_user = "${var.ssh_user}"
     # docker hub credentials
     dockerhub_username = "${var.dockerhub_username}"
-    dockerhub_password = "${var.dockerhub_password}"
+    #dockerhub_password = "${var.dockerhub_password}"
     # app container name
     app_container_name = "${var.app_container_name}"
     app_port = "${var.app_port}"
