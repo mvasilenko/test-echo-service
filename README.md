@@ -56,16 +56,16 @@ Steps to reproduce / make it work
 $ echo -n '[17/06/2016 12:30] Time to leave' | nc 52.59.245.195 1234 | jq .
 {
   "timestamp": 1466166600,
-  "hostname": "idemia.local",
-  "container": "idemia-container-1",
+  "hostname": "host.local",
+  "container": "host-container-1",
   "message": "Time to leave"
 }
 ```
 
   * play with it - `ssh -l ubuntu ec2_instance_ip` from previous step
     * `docker ps` - to see running containers
-    * `docker logs idemia-container-1 -f` - container logs
-    * `docker stop idemia-container-1` - stop echo service
+    * `docker logs host-container-1 -f` - container logs
+    * `docker stop host-container-1` - stop echo service
     * check email for alert from AWS CloudWatch
   * `terraform destroy -force` - destroy infrastructure when you done, to prevent extra AWS charges
 
